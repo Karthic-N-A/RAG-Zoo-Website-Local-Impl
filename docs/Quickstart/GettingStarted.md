@@ -115,3 +115,6 @@ segmenter = SegmentAttributor(llm=OpenAILLM())
 segments = segmenter.locate_segments(query, response, contexts)
 print(segments)
 ```
+
+We'll next move on to component wise guides
+
