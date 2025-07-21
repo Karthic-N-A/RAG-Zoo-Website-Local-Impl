@@ -1,7 +1,8 @@
 # chunker/
 
 ## `RecursiveChunker` 
-hierarchical separators, overlap preserved  
+
+Hierarchical separators, overlap preserved  
 
 - `__init__`(self, chunk_size: int = 512, chunk_overlap: int = 50)
 
@@ -11,8 +12,9 @@ hierarchical separators, overlap preserved
     metadata: Optional[List[Dict[str, str]]] = None
 ) -> List[str]
 
-## `SemanticChunker` 
-sentence-transformer similarity boundaries
+## `SemanticChunker`
+
+Sentence-transformer similarity boundaries
 
 - `__init__`(self, chunk_size: int = 512, chunk_overlap: int = 50)
 
@@ -23,7 +25,8 @@ sentence-transformer similarity boundaries
 ) -> List[str]
 
 ## `TokenChunker` 
-divides input texts into chunks with configurable overlaps
+
+Divides input texts into chunks with configurable overlaps
 
 - `__init__`(self, chunk_size: int = 512, chunk_overlap: int = 50)
 

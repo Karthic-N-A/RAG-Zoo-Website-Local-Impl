@@ -68,7 +68,7 @@ extra:
   generator: false
 
 nav:
-  - Home: index.md
+  - Home: README.md
 
   - Architecture:
     - Architecture/README.md

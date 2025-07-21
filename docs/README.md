@@ -1,12 +1,12 @@
 # RAG Zoo Documentation
 
-## Overview
+## **Overview**
 
 **RAG-Zoo** is a robust and highly modular Python framework created by the Programming Club at IIT Kanpur to simplify the development, experimentation, and deployment of diverse Retrieval-Augmented Generation (RAG) pipelines. Designed to serve both as a cutting-edge research sandbox and a production-ready toolkit, RAG-Zoo empowers researchers, developers, and practitioners to design, swap, test, and optimize RAG components with minimal boilerplate and maximum flexibility.
 Traditional RAG workflows often suffer from rigid, tightly coupled pipelines that make experimentation difficult and innovation slow. RAG-Zoo solves this by decomposing the entire RAG stack into clear, interchangeable stages such as chunking, embedding, indexing, retrieving, and generating, each governed by well-defined abstract base classes. Its plugin-based architecture, dependency injection, and comprehensive registry system enable developers to plug in custom or third-party modules seamlessly.
 This approach transforms RAG development into an open-ended, modular process: you can mix and match different chunkers, embedders, vector stores, retrievers, and LLMs or even add your own without rewriting your entire pipeline. Combined with thorough testing suites, CI/CD support, and an easy-to-launch demo app, RAG-Zoo is built to accelerate both research prototypes and real-world RAG applications.
 
-## Key Features and Design Philosophy
+## **Key Features and Design Philosophy**
 
 - Plug-and-Play Architecture:
     * The entire RAG pipeline is fully modular. Each stage — chunkers, embedders, vector stores, retrievers, generators — is implemented as an independent, swappable component. This makes it easy to mix and match implementations or add your own with just a few lines of code.
