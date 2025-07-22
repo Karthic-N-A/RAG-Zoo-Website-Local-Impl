@@ -1,6 +1,7 @@
 # AdaptiveRAG
 
-This is Adaptive RAG
+Adaptive RAG is a modular Retrieval-Augmented Generation system that enhances query responses by dynamically adjusting its retrieval strategy based on query complexity and context. It integrates a powerful language model for answer generation and uses a semantic embedding model to retrieve relevant information from a local document directory. Adaptive RAG is able to deliver context-rich and accurate answers to diverse and open-ended questions.
+
 ```python title="Adaptive RAG" linenums="1"
 from rag_src.Complete_RAG_Pipeline import AdaptiveRAG
 from rag_src.llm import OpenAILLM
