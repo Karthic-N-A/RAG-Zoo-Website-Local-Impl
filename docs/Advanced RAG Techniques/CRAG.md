@@ -1,6 +1,7 @@
 # CRAG
 
-This is CRAG
+CRAG (or Contextual RAG) extends the traditional RAG systems by combining local document retrival and live web search to provide up to date responses. It uses a language model for generation, a semantic embedder for retrieving relevant documents from a local directory, and a web retriever to fetch the latest information from the internet. This makes it highly effective for answering time-sensitive or constantly evolving topics.
+
 ```python title="CRAG" linenums="1"
 from rag_src.Complete_RAG_Pipeline import CRAG
 from rag_src.llm import OpenAILLM
