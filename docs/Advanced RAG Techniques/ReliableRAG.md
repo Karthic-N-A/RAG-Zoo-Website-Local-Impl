@@ -1,6 +1,7 @@
 # ReliableRAG
 
-This is reliable RAG
+Reliable RAG focuses on producing trustworthy, fact based responses by combining semantic retrieval with robust generation. It retrieves high-relevance content from a local document directory using a semantic embedder and then formulates answers through a language model. Designed with reliability in mind, it incorporates consistency checks to minimize hallucinations, making it ideal for use cases that demand factual accuracy, such as scientific and technical domains.
+
 ```python title="Reliable RAG" linenums="1"
 from rag_src.Complete_RAG_Pipeline import ReliableRAG
 from rag_src.llm import OpenAILLM
