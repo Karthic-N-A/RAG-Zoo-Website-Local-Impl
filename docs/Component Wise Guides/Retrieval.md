@@ -1,6 +1,8 @@
 # Retrieval
 
-So this is us getting the necessary data from the pipeline to be fed into the LLM as extra context. We use the web_retriever and [retriever](../Module-By-Module%20Deep%20Dive/retriever.md) here for the same.
+So this is us getting the necessary data from the pipeline to be fed into the LLM as extra context. 
+Retrieval fetches relevant data either from vector databases using similarity search or from the web using keyword-based search
+We use the web_retriever and [retriever](../Module-By-Module%20Deep%20Dive/retriever.md) here for the same.
 
 ```python title="Retrieving Data from the Web" linenums="1"
     from rag_src.web_retriever import DuckDuckGoWebRetriever
