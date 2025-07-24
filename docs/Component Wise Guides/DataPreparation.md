@@ -2,6 +2,8 @@
 
 We will be looking at the components related to preparing data to get raw data ready for the system.
 
+Preparing to use raw data generally consists of 3 main processes - loading the data from the documents we have, processing the data to filter out unnecessary parts and optionally enriching the data.
+
 Our [doc_loader](../Module-By-Module%20Deep%20Dive/doc_loader.md) , [doc_preprocessor](../Module-By-Module%20Deep%20Dive/doc_preprocessor.md) , [chunker](../Module-By-Module%20Deep%20Dive/chunker.md) and [pre_embedding_enricher](../Module-By-Module%20Deep%20Dive/pre_embedding_enricher.md) modules help us accomplish this.
 
 ```python title="Loading and Preprocessing Data" linenums="1"
