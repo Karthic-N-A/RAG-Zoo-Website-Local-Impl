@@ -1,6 +1,8 @@
 # Generation
 
-The final stage where the LLM uses the retrieved documents to generate an answer. We'll see about using the [post_retrieval_enricher](../Module-By-Module%20Deep%20Dive/post_retrieval_enricher.md) and [llm](../Module-By-Module%20Deep%20Dive/llm.md) modules here.
+The response generator takes the query and enriched retrieved data to produce a coherent and contextually accurate final answer. The Post Retrieval Enricher helps enrich the data retrieved.
+
+We'll see about using the [post_retrieval_enricher](../Module-By-Module%20Deep%20Dive/post_retrieval_enricher.md) and [llm](../Module-By-Module%20Deep%20Dive/llm.md) modules here.
 
 ```python title="PostRetrieval Enrichnment and Generation with LLM" linenums="1"
 from rag_src.post_retrieval_enricher import DocSummarizer
