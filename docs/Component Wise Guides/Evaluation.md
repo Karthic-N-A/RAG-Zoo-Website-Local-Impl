@@ -1,5 +1,7 @@
 # Evaluation
 
+An evaluator assesses the quality of retrieved documents or final answers, using certain metrics
+
 The single component dedicated to measuring the system's effectiveness - [evaluator](../Module-By-Module%20Deep%20Dive/evaluator.md)
 ```python title="LLM as a Judge" linenums="1"
 from rag_src.evaluator import RelevanceEvaluator
