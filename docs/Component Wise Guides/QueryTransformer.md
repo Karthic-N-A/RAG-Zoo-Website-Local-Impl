@@ -1,6 +1,8 @@
 # Query Transformer
 
-In case of RAG techniques having good queries can make our results MUCH BETTER. That's exactly what the [query_transformer](../Module-By-Module%20Deep%20Dive/query_transformer.md) module does
+In case of RAG techniques having good queries can make our results MUCH BETTER. 
+Query transformation rewrites or reformulates the user’s query to improve retrieval accuracy and relevance
+That's exactly what the [query_transformer](../Module-By-Module%20Deep%20Dive/query_transformer.md) module does
 
 ```python title="Query Transformation" linenums="1"
 from rag_src.query_transformer import LLMWebQueryTransformer
