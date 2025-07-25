@@ -8,7 +8,9 @@ Advanced preprocessor that performs lowercasing, stripping blank space, unicode 
     ```py
     * remove_stopwords: bool = False
     * language: str = "english"
+    ```
 
 - Functions:
     ```py
     - preprocess(self, docs: List[str]) -> List[str]
+    ```

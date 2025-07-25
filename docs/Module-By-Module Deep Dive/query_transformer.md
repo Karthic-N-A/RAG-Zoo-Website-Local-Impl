@@ -8,10 +8,12 @@
     ```python
     * llm
     * verbose: bool = False
+    ```
 
 - Functions:
     ```py
     * transform(self, query: str) -> List[str]
+    ```
 
 ## `HyDe` 
 
@@ -21,10 +23,12 @@
     ```python
     * llm
     * include_original: bool = True
+    ```
 
 - Functions:
     ```py
     * transform(self, query: str) -> List[str]
+    ```
 
 ## `MultiQuery` 
 
@@ -33,10 +37,12 @@
 - Parameters (with default vals and types) for class object:
     ```python
     * llm
+    ```
 
 - Functions:
     ```py
     * transform(self, query: str, n: int = 5) -> List[str]
+    ```
 
 ## `LLMWebQueryTransformer` 
 
@@ -45,7 +51,9 @@
 - Parameters (with default vals and types) for class object:
     ```python
     * llm: BaseLLM
+    ```
 
 -  Functions:
     ```py
     * transform(self, query: str) -> List[str]
+    ```

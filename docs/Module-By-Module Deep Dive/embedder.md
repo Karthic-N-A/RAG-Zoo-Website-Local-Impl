@@ -6,6 +6,7 @@
     ```py
     * model_name: str = "text-embedding-3-small"
     * api_key: str = None
+    ```
 
 - Functions: 
     ```py
@@ -14,6 +15,7 @@
         texts: List[str],
         mode: Literal["query", "document"] = "document"
     ) -> List[List[float]]
+    ```
 
 ## `GeminiEmbedder` 
 
@@ -23,6 +25,7 @@ Google GenAI multimodal embeddings
     ```py
     * model_name: str = "models/embedding-001"
     * api_key: str = None
+    ```
 
 - Functions: 
     ```py
@@ -31,3 +34,4 @@ Google GenAI multimodal embeddings
         texts: List[str],
         mode: Literal["query", "document"] = "document"
     ) -> List[List[float]]
+    ```

@@ -6,6 +6,7 @@
     ```python
     * collection_name: str = "rag_documents"
     * persist_directory: str = "./chroma_index"
+    ```
 
 - Functions
     ```py
@@ -17,6 +18,7 @@
     ) -> None
     - reset(self) -> None
     - persist(self) -> None
+    ```
 
 ## `WeaviateIndexer` 
 
@@ -26,6 +28,7 @@
     * api_key: Optional[str] = None
     * class_name: str = "DocumentChunk"
     * recreate_schema: bool = True
+    ```
 
 - Functions
     ```py
@@ -37,5 +40,6 @@
     ) -> None
     - reset(self) -> None
     - persist(self) -> None
+    ```
 
 ## `FAISS` is the default indexer
