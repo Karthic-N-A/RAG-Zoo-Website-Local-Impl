@@ -3,23 +3,49 @@
 ## `QueryDecomposer` 
 
 - breaks down a complex user query into simpler sub-questions
-    * `__init__`(self, llm, verbose: bool = False)
+
+- Parameters (with default vals and types) for class object:
+    ```python
+    * llm
+    * verbose: bool = False
+
+- Functions:
+    ```py
     * transform(self, query: str) -> List[str]
 
 ## `HyDe` 
 
-- does HyDE
-    * `__init__`(self, llm, include_original: bool = True)
+- Does HyDE
+
+- Parameters (with default vals and types) for class object:
+    ```python
+    * llm
+    * include_original: bool = True
+
+- Functions:
+    ```py
     * transform(self, query: str) -> List[str]
 
 ## `MultiQuery` 
 
 - generates multiple reformulated queries from the original input query
-    * `__init__`(self, llm)
+
+- Parameters (with default vals and types) for class object:
+    ```python
+    * llm
+
+- Functions:
+    ```py
     * transform(self, query: str, n: int = 5) -> List[str]
 
 ## `LLMWebQueryTransformer` 
 
 - transforms a user query into a more web-search-optimized version using an LLM.
-    *  `__init__`(self, llm: BaseLLM)
+
+- Parameters (with default vals and types) for class object:
+    ```python
+    * llm: BaseLLM
+
+-  Functions:
+    ```py
     * transform(self, query: str) -> List[str]

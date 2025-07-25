@@ -4,42 +4,89 @@
 
 GraphRAG LLM
 
-* `__init__`(self)
-* generate(self, query: str, contexts: List[str]) -> str
-  
-  Lot more functios under this can be seen under graph_Rag_llm.py in llm folder
+- Parameters (with default vals and types) for class object:
+    ```python
+    * No parameters
+
+- Functions:
+  ```py
+  # Prioritized environment variable-based selection
+  * _init_llm(self)
+  * _extract_text(self, output) -> str
+  * predict(self, prompt_template: PromptTemplate, **kwargs) -> str
+  * complete(self, prompt: str, **kwargs) -> CompletionResponse
+  * stream_complete(self, prompt: str, **kwargs) -> CompletionResponseGen
+  * chat(self, messages: List[ChatMessage], **kwargs) -> ChatResponse
+  * stream_chat(self, messages: List[ChatMessage], **kwargs) -> ChatResponseGen
+  * generate(self, query: str, contexts: List[str]) -> str
+
+  Below are async methods:
+
+  * acomplete(self, prompt: str, **kwargs) -> CompletionResponse
+  * astream_complete(
+        self, prompt: str, **kwargs
+    ) -> AsyncGenerator[CompletionResponse, None]
+  * achat(self, messages: List[ChatMessage], **kwargs) -> ChatResponse
+  * astream_chat(
+        self, messages: List[ChatMessage], **kwargs
+    ) -> AsyncGenerator[ChatResponse, None]:
 
 ## `HuggingFaceLLMWrapper` 
 
 HuggingFace LLM
 
-* `__init__`(self, model_name: str = "distilbert")
-* generate(self, query: str, contexts: List[str], temperature: float = 0.7) -> str
+- Parameters (with default vals and types) for class object:
+    ```python
+    * model_name: str = "distilbert"
+
+- Functions:
+  ```py
+  * generate(self, query: str, contexts: List[str], temperature: float = 0.7) -> str
 
 ## `OpenAILLM` 
 
 GPT-3.5-Turbo / GPT-4 / GPT-4o
 
-*  `__init__`(self, model: str = "gpt-4")
-* generate(self, query: str, contexts: List[str]) -> Union[str, dict] 
+- Parameters (with default vals and types) for class object:
+    ```python
+    * model: str = "gpt-4"
+
+- Functions:
+  ```py
+  * generate(self, query: str, contexts: List[str]) -> Union[str, dict] 
 
 ## `GroqLLM` 
 
-Ultra-low latency Mixtral/Gemma 
+- Parameters (with default vals and types) for class object:
+    ```python
+    * api_key: str = None
+    * model: str = "llama3-8b-8192"
 
-*  `__init__`(self, api_key: str = None, model: str = "llama3-8b-8192" )
-* generate(self, query: str, contexts: List[str]) -> Union[str, dict]
+- Functions:
+  ```py
+  * generate(self, query: str, contexts: List[str]) -> Union[str, dict]
 
 ## `OllamaLLM` 
 
 Local Llama 3, Mistral
 
-* `__init__`(self, model: str = "mistral")
-* generate(self, query: str, contexts: List[str]) -> Union[str, dict]
+- Parameters (with default vals and types) for class object:
+    ```python
+    * model: str = "mistral"
+  
+- Functions:
+  ```py
+  * generate(self, query: str, contexts: List[str]) -> Union[str, dict]
 
 ## `GeminiLLM` 
 
 Google Gemini Pro / Flash
 
-* `__init__`(self, api_key: str = None, model: str = "gemini-1.5-flash")
-* generate(self, query: str, contexts: List[str]) -> Union[str, dict]
+- Parameters (with default vals and types) for class object:
+    ```python
+    * api_key: str = None
+    * model: str = "gemini-1.5-flash"
+    
+- Functions:
+  ```py
+  * generate(self, query: str, contexts: List[str]) -> Union[str, dict]

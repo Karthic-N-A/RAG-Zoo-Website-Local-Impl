@@ -2,24 +2,32 @@
 
 ## `OpenAIEmbedder`
 
-1 536-D or 3 072-D via /v1/embeddings 
+- Parameters (with default vals and types) for class object:
+    ```py
+    * model_name: str = "text-embedding-3-small"
+    * api_key: str = None
 
-- `__init__`(self, model_name: str = "text-embedding-3-small", api_key: str = None)
-
-- embed(
-    self,
-    texts: List[str],
-    mode: Literal["query", "document"] = "document"
-) -> List[List[float]]
+- Functions: 
+    ```py
+    - embed(
+        self,
+        texts: List[str],
+        mode: Literal["query", "document"] = "document"
+    ) -> List[List[float]]
 
 ## `GeminiEmbedder` 
 
 Google GenAI multimodal embeddings
 
-- `__init__`(self, model_name: str = "models/embedding-001", api_key: str = None)
+- Parameters (with default vals and types) for class object:
+    ```py
+    * model_name: str = "models/embedding-001"
+    * api_key: str = None
 
-- embed(
-    self,
-    texts: List[str],
-    mode: Literal["query", "document"] = "document"
-) -> List[List[float]]
+- Functions: 
+    ```py
+    - embed(
+        self,
+        texts: List[str],
+        mode: Literal["query", "document"] = "document"
+    ) -> List[List[float]]
