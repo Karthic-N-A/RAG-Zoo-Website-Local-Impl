@@ -3,11 +3,12 @@ site_url: https://sitename.example
 theme:
   name: material
   font: 
-    text: Libre Baskerville
+    text: Newsreader
     code: Fira Mono
   logo: assets/pclublogo.png
   favicon: assets/pclublogo.png
   features:
+    - search.highlight
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.footer
@@ -33,8 +34,10 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
+      primary: indigo
       accent: deep purple
+plugins:
+  - search
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -55,6 +58,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
   - icon: simple/x
@@ -65,7 +71,10 @@ extra:
     link: https://github.com/pclubiitk
   - icon: simple/instagram
     link: https://www.instagram.com/pclubiitk/?hl=en
+  search:
+    placeholder: "Search"
   generator: false
+
 
 nav:
   - Home: README.md
