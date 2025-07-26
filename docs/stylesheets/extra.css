@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap");
 
 :root {
-  font-size: 185%;
+  font-size: 155%;
   --my-primary-base-rgb: 63, 81, 181;
   --my-header-opacity: 0.85;
-  --md-primary-fg-color: rgba(var(--my-primary-base-rgb), var(--my-header-opacity));
+  --md-primary-fg-color: rgba(
+    var(--my-primary-base-rgb),
+    var(--my-header-opacity)
+  );
   --md-primary-fg-color--light: rgb(121, 134, 203);
   --md-primary-fg-color--dark: rgb(40, 53, 147);
   --md-accent-fg-color: #ff5252;
@@ -30,24 +33,33 @@
     --md-default-fg-color: rgba(255, 255, 255, 0.87);
     --md-default-fg-color--light: rgba(255, 255, 255, 0.6);
     --md-default-fg-color--lighter: rgba(255, 255, 255, 0.3);
-    --md-shadow-z1: 0 2px 5px rgba(255, 255, 255, 0.05), 0 0 2px rgba(255, 255, 255, 0.02);
-    --md-shadow-z2: 0 4px 10px rgba(255, 255, 255, 0.08), 0 0 4px rgba(255, 255, 255, 0.05);
+    --md-shadow-z1: 0 2px 5px rgba(255, 255, 255, 0.05),
+      0 0 2px rgba(255, 255, 255, 0.02);
+    --md-shadow-z2: 0 4px 10px rgba(255, 255, 255, 0.08),
+      0 0 4px rgba(255, 255, 255, 0.05);
   }
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 1.3;
 }
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2.1rem; }
-h3 { font-size: 1.7rem; }
-
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.1rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
 
 .md-header,
 .md-header__inner {
@@ -123,7 +135,7 @@ a:hover {
 }
 
 .md-typeset__scrollwrap {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .highlighttable .linenos {
